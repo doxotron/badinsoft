@@ -15,6 +15,8 @@ $(document).ready(function () {
             var coords = '50%' + yPos + 'px';
 
             bgobj.css("backgroundPosition", coords);
+
+            
         });
     });
 });
