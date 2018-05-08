@@ -357,7 +357,6 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', Helvetica, Verdana, sans-serif;
     line-height:1.2;
-    letter-spacing: -2px;
 }
 h1 {
     font-size:36px;
@@ -416,6 +415,7 @@ hr {
 /* header styles */
 .site-header {
     position: fixed;
+    top:0;
     left: 0;
     right: 0;
     z-index: 999;
@@ -424,8 +424,18 @@ hr {
     -webkit-box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
-
+.sticky-header {
+    opacity:0.75;
+}
+.site-header:hover {
+    opacity:1;
+}
 .header-logo {
     max-width:180px;
 }
@@ -451,6 +461,7 @@ a.custom-logo-link, a.custom-logo-link:hover, a.custom-logo-link:focus, a.custom
 }
 .main-menu {
     position: relative;
+    padding-top:10px;
 }
 .main-navigation {
     font-family: 'Fira Sans', Helvetica, Verdana, sans-serif;
@@ -596,5 +607,14 @@ footer.comment-meta {
     padding-top:200px;
 }
 .content-area {
-    padding-top:100px;
+    padding-top:70px;
+}
+/* general styles */
+.trusted-companies {
+    background-color: #fff;
+    color:#232323;
+    text-align: center;
+}
+.trusted-companies h2 {
+    font-size: 18px;
 }

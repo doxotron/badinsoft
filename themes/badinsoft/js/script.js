@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    //parallax background
+    //store window var
+    var windowobj = $(window);
+    var docobj = $(document);
 
+    //parallax background
     $("section[data-type='background']").each(function () {
         var bgobj = $(this);
         var bgspeed = $(this).attr("data-speed");
@@ -16,7 +19,17 @@ $(document).ready(function () {
 
             bgobj.css("backgroundPosition", coords);
 
-            
+
         });
     });
+
+    windowobj.scroll(function () {
+        var header = $('.site-header');
+        if (windowobj.scrollTop() > header.outerHeight()) {
+            header.addClass('sticky-header');
+        } else {
+            header.removeClass('sticky-header');
+        }
+    });
+
 });

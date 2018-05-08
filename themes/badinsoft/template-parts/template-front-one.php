@@ -14,19 +14,25 @@ get_header(); ?>
     <main id="main" class="site-main">
         <?php while (have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    test
-                                </div>
-                            </div>
+            <section class="front-slider">
+                <?php echo do_shortcode(get_field('slider_shortcode')); ?>
+            </section>
+            <section class="trusted-companies">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Trusted by the dozen companies around the world</h2>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-xs-12 post-content">
+                        <?php the_content() ?>
+                    </div>
+                </div>
+            </section>
         </article>
         <?php endwhile; // End of the loop. ?>
     </main><!-- #main -->
