@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package badinsoft
- */
+*/
 
 ?>
 <!doctype html>
@@ -16,7 +16,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Roboto:300,400,400i,700,700i"
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Roboto:300,400,400i,700,700i"
           rel="stylesheet">
     <script>
         (function (i, s, o, g, r, a, m) {
