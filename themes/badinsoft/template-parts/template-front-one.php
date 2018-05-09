@@ -222,21 +222,19 @@ get_header(); ?>
                             <div class="row ceo-background">
                                 <div class="col-md-3 col-sm-6 col-xs-12 align-right-mob-center ceo-word">
                                     <h3>Dušan Cvetković</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur posuere
+                                    <span class="emphasized-preheadline">Badin Soft CTO</span>
+                                    <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur posuere
                                         enim, at suscipit mauris. Maecenas non nibh quis diam finibus iaculis.
                                         Pellentesque blandit sem quis dapibus sagittis. Pellentesque et ipsum lacus.
-                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue. Morbi sodales
-                                        porttitor eros, non condimentum eros sollicitudin non. Duis laoreet aliquam
-                                        magna vel eleifend.</p>
+                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue.</p>
                                 </div>
                                 <div class="col-md-3 col-md-push-6 col-sm-6 col-xs-12 align-left-mob-center ceo-word">
                                     <h3>Božidar Ignjatović</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur posuere
+                                    <span class="emphasized-preheadline">Badin Soft CEO</span>
+                                    <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur posuere
                                         enim, at suscipit mauris. Maecenas non nibh quis diam finibus iaculis.
                                         Pellentesque blandit sem quis dapibus sagittis. Pellentesque et ipsum lacus.
-                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue. Morbi sodales
-                                        porttitor eros, non condimentum eros sollicitudin non. Duis laoreet aliquam
-                                        magna vel eleifend.</p>
+                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue.</p>
                                 </div>
                             </div>
                         </div>
