@@ -30,6 +30,45 @@ $(document).ready(function () {
         } else {
             header.removeClass('sticky-header');
         }
+
+        $('.svg-animation').each(function () {
+            var topOfElement = $(this).offset().top;
+            var bottomOfElement = $(this).offset().top + $(this).outerHeight();
+            var bottomOfScreen = $(window).scrollTop() + window.innerHeight;
+            var topOfScreen = $(window).scrollTop();
+            var elem = $(this);
+            if ((bottomOfScreen > topOfElement) && (topOfScreen < bottomOfElement) && !$(this).hasClass('svg-icons-animated')) {
+
+                    $(this).addClass('svg-icons-animated');
+
+                    var drawLine = anime({
+                        targets: '.svg-icon path, .svg-icon line, .svg-icon polyline',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function (el, i) {
+                            return i * 250
+                        }
+                    });
+                    var backgroundAppear = anime({
+                        targets: '.svg-icon .svg-background',
+                        opacity:0.15,
+                        easing: 'easeInOutSine',
+                        duration: 1200,
+                        delay: 1200
+                    });
+                    var dotsAppear = anime({
+                        targets: '.svg-icon .svg-dark-filled',
+                        opacity:1,
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function (el, i) {
+                            return i * 250
+                        }
+                    });
+                }
+
+        });
     });
 
     var swiper = new Swiper('.swiper-container', {
@@ -45,4 +84,6 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     });
+
+
 });

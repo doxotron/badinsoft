@@ -180,6 +180,7 @@ function badinsoft_scripts() {
 
 	wp_enqueue_script( 'badinsoft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'anime-js', get_template_directory_uri() . '/js/anime.min.js', array('jquery'), '1', true );
     wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -12,4 +12,14 @@
         padding-top:20px;
         padding-bottom:10px;
     }
+    .ceo-word {
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .site-main {
+        padding-top:25px;
+    }
+    .footer-section img {
+        max-width:50% !important;
+    }
 }
