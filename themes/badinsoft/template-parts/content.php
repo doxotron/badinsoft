@@ -16,9 +16,9 @@
                 <div class="col-xs-10">
                     <?php
                     if ( is_singular() ) :
-                        the_title( '<h2 class="text-white page-title">', '</h1>' );
+                        the_title( '<h1 class="text-white page-title">', '</h1>' );
                     else :
-                        the_title( '<h2 class="text-white page-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                        the_title( '<h1 class="text-white page-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                     endif;
 
                     if ( 'post' === get_post_type() ) : ?>
@@ -33,7 +33,7 @@
         <div class="front-scroll-cta"><span class="front-cta-line"></span></div>
     </section>
     <section>
-        <div class="container site-section">
+        <div class="container page-content">
             <div class="row">
                 <div class="col-xs-12">
                     <?php

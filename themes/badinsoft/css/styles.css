@@ -625,7 +625,52 @@ footer.comment-meta {
 .post-head-section .site-section {
     padding-top:200px;
 }
+.site-section h1 {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+}
 /* general styles */
+.text-white,
+.text-white > p {
+    color:#fff;
+}
+.text-black {
+    color:#242832;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-bold {
+    font-weight: bold !important;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+.text-lg {
+    font-size:32px;
+}
+.text-md {
+    font-size: 22px;
+}
+.text-sm {
+    font-size: 15px;
+}
+.text-grey {
+    color: #646e77;
+}
+h1.page-title {
+    font-size: 48px;
+}
+.page-content {
+    padding-top:50px;
+    padding-bottom:50px;
+}
 .trusted-companies {
     background-color: #232832;
     color:#fff;
@@ -688,26 +733,29 @@ footer.comment-meta {
     left:0;
     top:20%;
 }
-.button, .button:active, .button:focus, .button:visited {
-    padding:14px 20px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Fira Sans', Arial, sans-serif;
-    -webkit-border-radius: 26px;
-    -moz-border-radius: 26px;
-    border-radius: 30px;
-    border: 1px solid #317ade;
-    display:inline-block;
+.button, .button:active, .button:focus, .button:visited,
+.wpforms-form button.button, .wpforms-form button.button:active, .wpforms-form button.button:focus {
+    padding:14px 20px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    font-family: 'Fira Sans', Arial, sans-serif !important;
+    -webkit-border-radius: 26px !important;
+    -moz-border-radius: 26px !important;
+    border-radius: 30px !important;
+    border: 1px solid #317ade !important;
+    display:inline-block !important;
 }
 .button:hover {
     text-decoration: none;
 }
-.primary-button, .primary-button:active, .primary-button:focus, .primary-button:visited {
-    background: rgba(49, 122, 222, 1);
-    color:#fff;
+.primary-button, .primary-button:active, .primary-button:focus, .primary-button:visited,
+.wpforms-form button.button.primary-button, .wpforms-form button.button.primary-button:active, .wpforms-form button.button.primary-button:focus {
+    background: rgba(49, 122, 222, 1) !important;
+    color:#fff !important;
 }
-.primary-button:hover {
-    background: rgba(49, 122, 222, 0.75);
+.primary-button:hover,
+.wpforms-form button.button.primary-button:hover {
+    background: rgba(49, 122, 222, 0.75) !important;
 }
 .secondary-button, .secondary-button:active, .secondary-button:focus, .secondary-button:visited {
     border: 1px solid #317ade;
@@ -1004,7 +1052,8 @@ input {
     border:1px solid #b6c1ce;
 }
 /*** svg styles ***/
-.st0{opacity:0.15;fill:#317ADE;}
-.st1{fill:none;stroke:#50555B;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.st2{fill:#50555B;}
-.st3{fill:none;stroke:#317ADE;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.svg-background{opacity:0;fill:#317ADE;}
+.line-dark{fill:none;stroke:#50555B;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.svg-dark-filled{fill:#50555B;opacity:0;}
+.line-light{fill:none;stroke:#317ADE;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.thin-line{fill:none;stroke:#317ADE;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
