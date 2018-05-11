@@ -24,22 +24,28 @@ get_header(); ?>
                                     <h2>Trusted by dozens of companies around the world</h2>
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/01_tx.png"
+                                         class="img-responsive">
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/02_crealogix.png"
+                                         class="img-responsive">
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/03_cr.png"
+                                         class="img-responsive">
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/04_telekom.png"
+                                         class="img-responsive">
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/05_subway.png"
+                                         class="img-responsive">
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
-                                    <p>logo</p>
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/06_craveable.png"
+                                         class="img-responsive">
                                 </div>
                             </div>
                         </div>
@@ -56,44 +62,6 @@ get_header(); ?>
                                     <div class="service-container">
                                         <div class="svg-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
-                                                <style type="text/css">
-                                                    .svg-background {
-                                                        opacity: 0;
-                                                        fill: #317ADE;
-                                                    }
-
-                                                    .line-dark {
-                                                        fill: none;
-                                                        stroke: #50555B;
-                                                        stroke-width: 3px;
-                                                        stroke-linecap: round;
-                                                        stroke-linejoin: round;
-                                                        stroke-miterlimit: 10;
-                                                    }
-
-                                                    .svg-dark-filled {
-                                                        fill: #50555B;
-                                                        opacity: 0;
-                                                    }
-
-                                                    .line-light {
-                                                        fill: none;
-                                                        stroke: #317ADE;
-                                                        stroke-width: 3px;
-                                                        stroke-linecap: round;
-                                                        stroke-linejoin: round;
-                                                        stroke-miterlimit: 10;
-                                                    }
-
-                                                    .thin-line {
-                                                        fill: none;
-                                                        stroke: #317ADE;
-                                                        stroke-width: 2;
-                                                        stroke-linecap: round;
-                                                        stroke-linejoin: round;
-                                                        stroke-miterlimit: 10;
-                                                    }
-                                                </style>
                                                 <path class="svg-background"
                                                       d="M132.4 126.2h-100c-5.9 0-10.7-4.8-10.7-10.7V40c0-5.9 4.8-10.7 10.7-10.7h106c5.9 0 10.7 4.8 10.7 10.7v69.6C149 118.8 141.6 126.2 132.4 126.2z"/>
                                                 <path class="line-dark"
@@ -107,9 +75,7 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Custom Software Development</h3>
-                                        <p>Strategically built with your needs in mind, our custom software development
-                                            solutions ensure you leave a unique mark on the internet’s landscape,
-                                            enhancing your online presence and value.</p>
+                                        <p>Strategically built with your needs in mind, our custom software development solutions ensure you leave a unique mark on the internet’s landscape, enhancing your online presence and value. </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 service">
@@ -129,10 +95,7 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Mobile Development</h3>
-                                        <p>To keep up with your always-on-the-go users, we provide mobile software
-                                            solutions tailored to your specific needs. Always keep in touch with your
-                                            customers across many popular platforms: Android, iOS, React Native, and
-                                            others.</p>
+                                        <p>To keep up with your always-on-the-go users, we provide mobile software solutions tailored to your specific needs. Always keep in touch with your customers across many popular platforms: Android, iOS, React Native, and others.</p>
                                     </div>
                                 </div>
                             </div>
@@ -157,10 +120,7 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Support & Maintenance</h3>
-                                        <p>Even after we hit the product launch milestone, our job is not done. We
-                                            provide reliable maintenance, technical support, quality assurance, and
-                                            training for all products we develop, assuring your software runs seamlessly
-                                            with zero downtime.</p>
+                                        <p>Even after we hit the product launch milestone, our job is not done. We provide reliable maintenance, technical support, quality assurance, and training for all products we develop, assuring your software runs seamlessly with zero downtime.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 service">
@@ -183,16 +143,13 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Design & Consulting</h3>
-                                        <p>If you need expert guidance for your new idea, product or a project, we’ve
-                                            got you covered. Our designers will make sure you get the best advice and
-                                            support in accordance to the world’s best practices to ensure your business
-                                            challenges are properly addressed.</p>
+                                        <p>If you need expert guidance for your new idea, product or a project, we’ve got you covered. Our designers will make sure you get the best advice and support in accordance to the world’s best practices to ensure your business challenges are properly addressed.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12" style="padding-top:40px; padding-bottom:30px;">
-                                    <a href="#" class="button secondary-button">More about our services</a>
+                                    <a href="services" class="button secondary-button">More about our services</a>
                                 </div>
                             </div>
                         </div>
@@ -201,35 +158,26 @@ get_header(); ?>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5 col-sm-12 align-right-mob-center">
-                                    <img src="<?php echo get_template_directory_uri() ?>/images/illustration_pending.png"
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/card.png"
                                          class="img-responsive">
                                 </div>
                                 <div class="col-md-7 col-sm-12 align-left-mob-center text-section">
                                     <span class="emphasized-preheadline">Leaders in</span>
                                     <h2>Banking and Loyalty systems</h2>
-                                    <p>Focusing on specific industries, such as banking and loyalty, helped our
-                                        development and business teams gain more than 5 years of experience and
-                                        knowledge in developing custom made solutions for some of the world’s leading
-                                        companies in these areas. By combining industry-specific knowledge with an
-                                        in-depth understanding of business processes, we are able to adequately help our
-                                        clients at any stage of the project lifecycle.</p>
-                                    <a href="#" class="line-link">Read More</a>
+                                    <p>Focusing on specific industries, such as banking and loyalty, helped our development and business teams gain more than 5 years of experience and knowledge in developing custom made solutions for some of the world’s leading companies in these areas. By combining industry-specific knowledge with an in-depth understanding of business processes, we are able to adequately help our clients at any stage of the project lifecycle.</p>
+                                    <a href="services" class="line-link">Read More</a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-5 col-sm-12 col-md-push-7 align-left-mob-center">
-                                    <img src="<?php echo get_template_directory_uri() ?>/images/illustration_pending.png"
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/tech2.png"
                                          class="img-responsive">
                                 </div>
                                 <div class="col-md-7 col-md-pull-5 col-sm-12 align-right-mob-center text-section">
                                     <span class="emphasized-preheadline">We're modern</span>
                                     <h2>Our Technology</h2>
-                                    <p>Creating value to end users and providing competitive advantage to our clients
-                                        and partners requires a lot of dedication and knowledge. We strategically invest
-                                        our time and resources in following and implementing leading technological
-                                        trends into our everyday work. Our domain knowledge base is built upon Java,
-                                        Javascript, web, mobile, and database technologies.</p>
-                                    <a href="#" class="line-link">Read More</a>
+                                    <p>Creating value to end users and providing competitive advantage to our clients and partners requires a lot of dedication and knowledge. We strategically invest our time and resources in following and implementing leading technological trends into our everyday work. Our domain knowledge base is built upon Java, Javascript, web, mobile, and database technologies.</p>
+                                    <a href="our-experts" class="line-link">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -239,6 +187,7 @@ get_header(); ?>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12 align-right-mob-center">
                                     <div class="testimonial-left">
+                                        <h2 style="margin-bottom:40px; margin-top:0;">Client testimonials</h2>
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
 												<?php
@@ -315,36 +264,48 @@ get_header(); ?>
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h2>Our story</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur posuere
-                                        enim, at suscipit mauris. Maecenas non nibh quis diam finibus iaculis.
-                                        Pellentesque blandit sem quis dapibus sagittis. Pellentesque et ipsum lacus.
-                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue. Morbi sodales
-                                        porttitor eros, non condimentum eros sollicitudin non. Duis laoreet aliquam
-                                        magna vel eleifend.</p>
+                                    <p>It’s all about people – our employees and our clients. Technology is here to help
+                                        us achieve our goals. As engineers living in a city with great hi&nbsp;tech
+                                        tradition, we feel it’s our duty to improve our clients’ business and life in
+                                        general. </p>
                                 </div>
                             </div>
-                            <div class="row ceo-background">
-                                <div class="col-md-3 col-sm-6 col-xs-12 align-right-mob-center ceo-word">
-                                    <h3>Dušan Cvetković</h3>
-                                    <span class="emphasized-preheadline">Badin Soft CTO</span>
-                                    <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur
-                                        posuere
-                                        enim, at suscipit mauris. Maecenas non nibh quis diam finibus iaculis.
-                                        Pellentesque blandit sem quis dapibus sagittis. Pellentesque et ipsum lacus.
-                                        Fusce quam enim, rutrum eu diam a, eleifend commodo augue.</p>
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-2 col-sm-6 col-xs-12 align-right-mob-center ceo-word">
+                                    <div class="testimonial-left">
+                                        <img src="<?php echo get_template_directory_uri() ?>/images/dc.jpg"
+                                             class="img-circle ceo-image">
+                                        <h3>Dušan Cvetković</h3>
+                                        <span class="emphasized-preheadline">Badin Soft CTO</span>
+                                        <div class="quotation">
+                                            <p><br>Going forward in life - and especially in business - means <strong>always
+                                                    evolving, overcoming obstacles and being better than yesterday</strong>. And
+                                                technology is here to make that evolution easier and more fun. Combining
+                                                constant improvement and fun is the way we do things here in Badin. It
+                                                works and we wouldn't have it any other way.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-3 col-md-push-6 col-sm-6 col-xs-12 align-left-mob-center ceo-word">
-                                    <h3>Božidar Ignjatović</h3>
-                                    <span class="emphasized-preheadline">Badin Soft CEO</span>
-                                    <p><br>Leading a successful company is determined, on one hand, by understanding and
-                                        developing the values people have within themselves, and harmonizing them with
-                                        company vision, and on the other hand, forming a company having people in mind
-                                        and choosing exceptional individuals according to those values. </p>
+                                <div class="col-md-4 col-md-push-2 col-sm-6 col-xs-12 align-left-mob-center ceo-word">
+                                    <div class="testimonial-right">
+                                        <img src="<?php echo get_template_directory_uri() ?>/images/boza.jpg"
+                                             class="img-circle ceo-image">
+                                        <h3>Božidar Ignjatović</h3>
+                                        <span class="emphasized-preheadline">Badin Soft CEO</span>
+                                        <div class="quotation">
+                                            <p><br>Over the years I learned that <strong>satisfied employees</strong> stands for
+                                                <strong>satisfied clients and partners</strong>. Our recipe for success is simple -
+                                                trust your employees’ experience and expertise, acknowledge their
+                                                opinions and advice, and help them grow both personally and
+                                                professionally. They’ll know how to appreciate it. Because in the end,
+                                                it truly is all about people. </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="services-section">
+                    <section class="blue-section">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
@@ -353,6 +314,8 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                                    <h3>We'd love to hear from you!</h3>
+                                    <p>Contact us with a brief description or specification of your project and we will contact you shortly to learn more about your needs.</p>
 									<?php echo do_shortcode( '[wpforms id="55" title="false" description="false"]' ) ?>
                                 </div>
                             </div>

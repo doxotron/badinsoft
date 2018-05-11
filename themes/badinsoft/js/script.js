@@ -55,7 +55,9 @@ $(document).ready(function () {
                         opacity:0.15,
                         easing: 'easeInOutSine',
                         duration: 1200,
-                        delay: 1200
+                        delay: function (el, i) {
+                            return i * 800
+                        }
                     });
                     var dotsAppear = anime({
                         targets: '.svg-icon .svg-dark-filled',
@@ -63,7 +65,7 @@ $(document).ready(function () {
                         easing: 'easeInOutSine',
                         duration: 1500,
                         delay: function (el, i) {
-                            return i * 250
+                            return i * 1000
                         }
                     });
                 }
