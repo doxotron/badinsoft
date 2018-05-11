@@ -340,6 +340,27 @@ template {
     display: none;
 }
 /*=============== NORMALIZE END ===============*/
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 body, html {
     font-family: Roboto, Arial, sans-serif;
     font-size: 18px;
@@ -376,6 +397,9 @@ h5 {
 h6 {
     font-size:18px;
     font-weight: 700;
+}
+p {
+    margin-bottom:0.5em;
 }
 p strong, p b, strong {
     font-weight: 700;
@@ -470,6 +494,10 @@ a.mega-menu-link {
     -ms-transition: border-color 0.3s;
     -o-transition: border-color 0.3s;
     transition: border-color 0.3s;
+}
+.cta-item > a {
+    background: rgba(49, 122, 222, 0.9) !important;
+    color: #fff !important;
 }
 /*** header styles end ***/
 /*** back to top styles ***/
@@ -1047,6 +1075,12 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
     text-align: center;
     color:#fff;
 }
+.blue-section label {
+    text-align: left;
+}
+.blue-section div.wpforms-container-full .wpforms-form .wpforms-required-label {
+    color:#fff;
+}
 .blue-section h2 {
     padding-bottom:20px;
     margin-bottom:20px;
@@ -1119,6 +1153,21 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
     left:35px;
     position: absolute;
     color:#089fd3;
+}
+.contact-section {
+    border:1px solid #eaeaea;
+    background-color: #fbfbfb;
+    -webkit-box-shadow:  0 0 40px rgba(0,0,0,0.05);
+    -moz-box-shadow:  0 0 40px rgba(0,0,0,0.05);
+    box-shadow:  0 0 40px rgba(0,0,0,0.05);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:5% 5% 1.5%;
+    margin-top:50px;
+}
+.contact-section .wpforms-submit-container {
+    text-align: right;
 }
 /*** svg styles ***/
 .svg-background{opacity:0;fill:#317ADE;}

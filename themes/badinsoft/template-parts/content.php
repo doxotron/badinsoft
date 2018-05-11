@@ -62,7 +62,7 @@
     <section class="light-grey-section blog-category-section">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                     <?php badinsoft_entry_footer(); ?>
                 </div>
             </div>

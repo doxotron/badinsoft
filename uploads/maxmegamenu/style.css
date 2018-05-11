@@ -1,4 +1,4 @@
-/** Thursday 10th of May 2018 09:00:01 AM (core) **/
+/** Friday 11th of May 2018 08:28:03 PM (core) **/
 
 #mega-menu-wrap-menu-1, #mega-menu-wrap-menu-1 #mega-menu-menu-1, #mega-menu-wrap-menu-1 #mega-menu-menu-1 ul.mega-sub-menu, #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item, #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link {
   -moz-transition: none;
@@ -246,14 +246,14 @@
   color: #089ed2;
   font-weight: normal;
   text-decoration: none;
-  border-color: #222;
+  border-color: #089ed2;
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
   background: #fff;
   color: #089ed2;
   font-weight: normal;
   text-decoration: none;
-  border-color: #222;
+  border-color: #089ed2;
 }
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
   border-top: 0px solid #fff;
@@ -262,7 +262,7 @@
   border-bottom: 4px solid #fff;
   outline: none;
   text-decoration: none;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 16px 0px 16px;
   line-height: 80px;
   font-weight: normal;
   height: 80px;

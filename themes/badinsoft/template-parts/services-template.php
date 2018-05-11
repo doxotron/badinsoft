@@ -59,11 +59,11 @@ get_header(); ?>
 								wp_reset_query(); // End of the loop. ?>
 							</div>
 							<div class="row">
-								<div class="col-xs-12">
+								<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 									<?php the_content(); ?>
 								</div>
 							</div>
-							<div>
+							<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 								<?php
 								$counter=1;
 								query_posts( array(
