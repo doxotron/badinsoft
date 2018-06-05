@@ -188,7 +188,8 @@ get_header(); ?>
                     <section class="testimonials-section">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6 col-sm-12 align-right-mob-center">
+                                <?php $studies_exist = 0;?>
+                                <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
                                     <div class="testimonial-left">
                                         <h2 style="margin-bottom:40px; margin-top:0;">Client testimonials</h2>
                                         <div class="swiper-container">
@@ -226,37 +227,6 @@ get_header(); ?>
                                             <div class="swiper-button-next swiper-button-white"></div>
                                             <div class="swiper-button-prev swiper-button-white"></div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 align-left-mob-center">
-                                    <div class="testimonial-right">
-										<?php
-										query_posts( array(
-											'post_type' => 'studies',
-											'showposts' => 1
-										) );
-										if ( have_posts() ): ?>
-											<?php
-											while ( have_posts() ) :
-												the_post();
-												?>
-                                                <a href="<?php the_permalink() ?>" class="image-link">
-													<?php if ( has_post_thumbnail() ) {
-														the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
-													} else {
-														$defaultImage = get_template_directory_uri();
-														echo "<img src='$defaultImage/images/default_testimonial_img.png' class='img-circle'>";
-													}
-													?>
-                                                </a>
-                                                <a href="<?php the_permalink() ?>"><?php the_title( '<h3>', '</h3>' ) ?></a>
-												<?php the_excerpt(); ?>
-                                                <a href="<?php the_permalink() ?>" class="line-link line-link-white">Read
-                                                    More</a>
-											<?php endwhile; ?>
-
-										<?php endif;
-										wp_reset_query(); // End of the loop. ?>
                                     </div>
                                 </div>
                             </div>
