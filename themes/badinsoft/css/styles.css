@@ -1183,3 +1183,20 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
 .svg-dark-filled{fill:#50555B;opacity:0;}
 .line-light{fill:none;stroke:#317ADE;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .thin-line{fill:none;stroke:#317ADE;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+.blog-post-row {
+    margin-bottom:30px;
+}
+
+.blog-image::after {
+    position: absolute;
+    content: '';
+    right:15px;
+    bottom:0;
+    top:0;
+    width:50%;
+    max-width:95px;
+    background:transparent url("../images/blog_image_mask.png") left top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
