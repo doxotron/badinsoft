@@ -7,13 +7,13 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package badinsoft
-*/
+ */
 
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Roboto:300,400,400i,700,700i"
@@ -36,7 +36,7 @@
 
     </script>
 
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -46,20 +46,25 @@
             <div class="row">
                 <div class="col-xs-12 main-menu">
                     <div class="site-branding">
-					    <?php the_custom_logo(); ?>
+						<?php the_custom_logo(); ?>
                     </div>
                     <nav id="site-navigation" class="main-navigation">
-					    <?php
-					    wp_nav_menu(array(
-						    'theme_location' => 'menu-1',
-						    'menu_id' => 'primary-menu',
-					    ));
-					    ?>
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+						?>
                     </nav>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
+	    <?php if ( 'post' === get_post_type() ) : ?>
+        <div class="reading-progress-container">
+            <div class="reading-progress-fill"></div>
+        </div>
+        <?php endif; ?>
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

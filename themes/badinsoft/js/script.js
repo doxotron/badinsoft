@@ -71,6 +71,17 @@ $(document).ready(function () {
                 }
 
         });
+
+        if ($('#content article').hasClass('type-post')) {
+            var pageHeight = $('html').outerHeight();
+            var viewHeight = $(window).height();
+            var scroll = $('html').scrollTop();
+            var pageOutside = pageHeight - viewHeight;
+
+            var progress = scroll * 100 / pageOutside;
+
+            $('.reading-progress-fill').css('width',progress.toFixed(2)+"%");
+        }
     });
 
     var swiper = new Swiper('.swiper-container', {

@@ -149,6 +149,15 @@ function badinsoft_widgets_init() {
         'before_title'  => '<h3>',
         'after_title'   => '</h3>',
     ) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Share Sidebar', 'badinsoft' ),
+		'id'            => 'share-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'badinsoft' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'badinsoft_widgets_init' );
 

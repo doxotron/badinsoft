@@ -766,7 +766,8 @@ h1.page-title {
     top:20%;
 }
 .button, .button:active, .button:focus, .button:visited,
-.wpforms-form button.button, .wpforms-form button.button:active, .wpforms-form button.button:focus {
+.wpforms-form button.button, .wpforms-form button.button:active, .wpforms-form button.button:focus,
+.comment-form input[type='submit'],.comment-form input[type='submit']:focus, .comment-form input[type='submit']:active {
     padding:14px 20px !important;
     font-size: 18px !important;
     font-weight: 400 !important;
@@ -781,12 +782,14 @@ h1.page-title {
     text-decoration: none;
 }
 .primary-button, .primary-button:active, .primary-button:focus, .primary-button:visited,
-.wpforms-form button.button.primary-button, .wpforms-form button.button.primary-button:active, .wpforms-form button.button.primary-button:focus {
+.wpforms-form button.button.primary-button, .wpforms-form button.button.primary-button:active, .wpforms-form button.button.primary-button:focus,
+.comment-form input[type='submit'],.comment-form input[type='submit']:focus, .comment-form input[type='submit']:active {
     background: rgba(49, 122, 222, 1) !important;
     color:#fff !important;
 }
 .primary-button:hover,
-.wpforms-form button.button.primary-button:hover {
+.wpforms-form button.button.primary-button:hover,
+.comment-form input[type='submit']:hover {
     background: rgba(49, 122, 222, 0.75) !important;
 }
 .secondary-button, .secondary-button:active, .secondary-button:focus, .secondary-button:visited {
@@ -1199,4 +1202,68 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
     background:transparent url("../images/blog_image_mask.png") left top no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+.dot-separator {
+    width:90%;
+    border-bottom: 2px dotted #ccc;
+    margin:20px 0;
+}
+.blog-sidebar h3,
+.blog-sidebar .posted-on,
+.blog-sidebar .cat-links {
+    text-transform: uppercase;
+    color: #aeaeae;
+    font-size: 15px;
+    white-space: pre;
+}
+.blog-sidebar time,
+.blog-sidebar .cat-links a {
+    display: inline-block;
+}
+.addtoany_list {
+    margin-left:-10px;
+}
+/* reading progress */
+.reading-progress-container {
+    height:3px;
+    background-color: transparent;
+    display: block;
+    width:100%;
+    position: relative;
+    margin-bottom:-3px;
+}
+.reading-progress-fill {
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:0;
+    background: #317ADE;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -ms-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
+}
+input[type='text'],
+input[type='email'],
+input[type='url'],
+textarea {
+    border-radius: 2px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+}
+textarea {
+    min-height: 200px;
+}
+.comment-form {
+    padding-bottom:60px;
 }
