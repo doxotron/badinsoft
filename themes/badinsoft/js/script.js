@@ -73,7 +73,7 @@ $(document).ready(function () {
         });
 
         if ($('#content article').hasClass('type-post')) {
-            var pageHeight = $('html').outerHeight();
+            var pageHeight = $('.post.type-post').outerHeight();
             var viewHeight = $(window).height();
             var scroll = $('html').scrollTop();
             var pageOutside = pageHeight - viewHeight;

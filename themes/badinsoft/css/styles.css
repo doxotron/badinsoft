@@ -1225,12 +1225,12 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
 }
 /* reading progress */
 .reading-progress-container {
-    height:3px;
+    height:5px;
     background-color: transparent;
     display: block;
     width:100%;
     position: relative;
-    margin-bottom:-3px;
+    margin-bottom:-5px;
 }
 .reading-progress-fill {
     position: absolute;
