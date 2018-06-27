@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="light-grey-section">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-md-offset-3 col-sm-12 col-xs-12 blog-sidebar">
@@ -83,7 +83,7 @@
 			                <?php dynamic_sidebar( 'share-sidebar' ); ?>
                         </div>
 	                <?php endif; ?>
-                    <div class="dot-separator"></div>
+                    <div style="height:40px;"></div><!-- spacer -->
                 </div>
             </div>
         </div>

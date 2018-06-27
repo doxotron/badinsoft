@@ -14,13 +14,21 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+            <header>
+                <section class="post-head-section" style="background:url('<?php if (has_post_thumbnail()) { the_post_thumbnail_url("full");} else {echo get_template_directory_uri()."/images/default_feat_img.png";}?>') top center no-repeat fixed; -webkit-background-size: cover;background-size: cover;" data-type="background" data-speed="2">
+                    <div class="container site-section">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <h1 class="text-white page-title"><?php
+	                                the_archive_title( '<h1 class="page-title text-white">', '</h1>' );
+	                                the_archive_description( '<div class="archive-description text-white">', '</div>' );
+	                                ?></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="front-scroll-cta"><span class="front-cta-line"></span></div>
+                </section>
+            </header>
 
 			<?php
 			/* Start the Loop */
@@ -32,7 +40,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/postlist', get_post_type() );
 
 			endwhile;
 
@@ -49,5 +57,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

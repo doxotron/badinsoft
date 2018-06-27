@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    if ($('body').hasClass('single-post')) {
+        readingProgress();
+    }
+
     //store window var
     var windowobj = $(window);
     var docobj = $(document);
@@ -39,48 +43,41 @@ $(document).ready(function () {
             var elem = $(this);
             if ((bottomOfScreen > topOfElement) && (topOfScreen < bottomOfElement) && !$(this).hasClass('svg-icons-animated')) {
 
-                    $(this).addClass('svg-icons-animated');
+                $(this).addClass('svg-icons-animated');
 
-                    var drawLine = anime({
-                        targets: '.svg-icon path, .svg-icon line, .svg-icon polyline',
-                        strokeDashoffset: [anime.setDashoffset, 0],
-                        easing: 'easeInOutSine',
-                        duration: 1500,
-                        delay: function (el, i) {
-                            return i * 250
-                        }
-                    });
-                    var backgroundAppear = anime({
-                        targets: '.svg-icon .svg-background',
-                        opacity:0.15,
-                        easing: 'easeInOutSine',
-                        duration: 1200,
-                        delay: function (el, i) {
-                            return i * 800
-                        }
-                    });
-                    var dotsAppear = anime({
-                        targets: '.svg-icon .svg-dark-filled',
-                        opacity:1,
-                        easing: 'easeInOutSine',
-                        duration: 1500,
-                        delay: function (el, i) {
-                            return i * 1000
-                        }
-                    });
-                }
+                var drawLine = anime({
+                    targets: '.svg-icon path, .svg-icon line, .svg-icon polyline',
+                    strokeDashoffset: [anime.setDashoffset, 0],
+                    easing: 'easeInOutSine',
+                    duration: 1500,
+                    delay: function (el, i) {
+                        return i * 250
+                    }
+                });
+                var backgroundAppear = anime({
+                    targets: '.svg-icon .svg-background',
+                    opacity: 0.15,
+                    easing: 'easeInOutSine',
+                    duration: 1200,
+                    delay: function (el, i) {
+                        return i * 800
+                    }
+                });
+                var dotsAppear = anime({
+                    targets: '.svg-icon .svg-dark-filled',
+                    opacity: 1,
+                    easing: 'easeInOutSine',
+                    duration: 1500,
+                    delay: function (el, i) {
+                        return i * 1000
+                    }
+                });
+            }
 
         });
 
-        if ($('#content article').hasClass('type-post')) {
-            var pageHeight = $('.post.type-post').outerHeight();
-            var viewHeight = $(window).height();
-            var scroll = $('html').scrollTop();
-            var pageOutside = pageHeight - viewHeight;
-
-            var progress = scroll * 100 / pageOutside;
-
-            $('.reading-progress-fill').css('width',progress.toFixed(2)+"%");
+        if ($('body').hasClass('single-post')) {
+            readingProgress();
         }
     });
 
@@ -98,5 +95,19 @@ $(document).ready(function () {
         },
     });
 
-
 });
+
+function readingProgress() {
+    var pageHeight = $('.post.type-post').outerHeight();
+    var viewHeight = $(window).height();
+    var scroll = $('html').scrollTop();
+    var pageOutside = pageHeight - viewHeight;
+
+    var progress = scroll * 100 / pageOutside;
+
+    if (pageHeight < viewHeight) {
+        $('.reading-progress-fill').css('width', "100%");
+    } else {
+        $('.reading-progress-fill').css('width', progress.toFixed(2) + "%");
+    }
+}
