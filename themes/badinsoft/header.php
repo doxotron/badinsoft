@@ -60,7 +60,7 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-	    <?php if ( 'post' === get_post_type() ) : ?>
+	    <?php if ( 'post' === get_post_type() || 'studies' === get_post_type() ) : ?>
         <div class="reading-progress-container">
             <div class="reading-progress-fill"></div>
         </div>

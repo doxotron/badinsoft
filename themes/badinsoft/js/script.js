@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if ($('body').hasClass('single-post')) {
+    if ($('body').hasClass('single-post') || $('body').hasClass('single-studies')) {
         readingProgress();
     }
 
@@ -28,6 +28,7 @@ $(document).ready(function () {
     });
 
     windowobj.scroll(function () {
+        var pageTop = $("html").scrollTop();
         var header = $('.site-header');
         if (windowobj.scrollTop() > header.outerHeight()) {
             header.addClass('sticky-header');
@@ -76,8 +77,14 @@ $(document).ready(function () {
 
         });
 
-        if ($('body').hasClass('single-post')) {
+        if ($('body').hasClass('single-post') || $('body').hasClass('single-studies')) {
             readingProgress();
+        }
+
+        if (pageTop > 300 && ($('html').outerHeight()-$(window).outerHeight()-$("footer").outerHeight()) > pageTop) {
+            $(".back-top-fixed").removeClass("back-top-hidden");
+        } else {
+            $(".back-top-fixed").addClass("back-top-hidden");
         }
     });
 
@@ -93,6 +100,11 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+
+    $("a[href='#top']").click(function (e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop:0},500);
     });
 
 });

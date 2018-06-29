@@ -657,6 +657,66 @@ footer.comment-meta {
     margin: 0 0 30px;
     padding: 0 0 10px;
 }
+.front-scroll-cta {
+    display: inline-block;
+    width: 20px;
+    height: 32px;
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    left:50%;
+    bottom:5%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    opacity:0.5;
+}
+
+.front-cta-line {
+    position:absolute;
+    width:2px;
+    height:6px;
+    left:7px;
+    top:4px;
+    background-color: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 2px;
+    -webkit-animation: cta-line-animation;
+    -o-animation: cta-line-animation;
+    animation: cta-line-animation;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+@keyframes cta-line-animation {
+    0% {
+        top:4px;
+    }
+    90% {
+        top:4px;
+    }
+    95% {
+        top: 8px;
+    }
+    100% {
+        top:4px;
+    }
+}
 /* general styles */
 .text-white,
 .text-white > p {
@@ -800,6 +860,14 @@ h1.page-title {
     background: #317ade;
     color:#fff;
 }
+.white-button, .white-button:active, .white-button:focus, .white-button:visited {
+    border: 2px solid #fff !important;
+    background: #fff;
+    color:#317ade;
+}
+.white-button:hover {
+    background:rgba(255,255,255,0.8);
+}
 .industry-expertise {
     background: #fff;
     color:#242832;
@@ -830,7 +898,8 @@ h1.page-title {
 .align-right-mob-center h2:after {
     right: 5px;
 }
-.emphasized-preheadline {
+.emphasized-preheadline,
+.portfolio-section .testimonial-title {
     color: #317ade;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -1055,10 +1124,12 @@ a.image-link, a.image-link:hover, a.image-link:focus, a.image-link:active, a.ima
     color:#242832;
     text-align: center;
     padding-top:60px;
+    padding-bottom:60px;
 }
 .ceo-image {
     max-width:120px;
     height: auto;
+    display: inline-block;
     -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -1403,4 +1474,70 @@ input[type='checkbox']:hover::after {
 a.no-style, a.no-style:focus, a.no-style:active, a.no-style:visited, a.no-style:hover {
     border-bottom:none;
     color:inherit;
+}
+.timeline-section {
+    padding-top:60px;
+    padding-bottom:60px;
+    color:#fff;
+}
+.equal-height-row {
+    display: flex;
+    width: 100%;
+}
+.timeline-image {
+    text-align: center;
+    position: relative;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline-image::before {
+    position: absolute;
+    content: '';
+    width:1px;
+    border-left:1px dashed #fff;
+    left:50%;
+    top:calc(50% + 30px);
+    bottom:0;
+}
+.timeline-image.timeline-image-middle::after {
+    position: absolute;
+    content: '';
+    width:1px;
+    border-left:1px dashed #fff;
+    left:50%;
+    top:0;
+    bottom:calc(50% + 30px);
+}
+.timeline-image-last::before {
+    border-left: none !important;
+}
+.timeline-image img {
+    max-width: 60px;
+    height: auto;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+.timeline-description {
+    padding-top:40px;
+    padding-bottom:20px;
+}
+.timeline-description h3 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top:10px;
+    position: relative;
+    z-index: 10;
+}
+.timeline-description h4 {
+    font-size: 90px;
+    opacity:0.3;
+    font-weight: bold;
+    margin-bottom:-60px;
+    margin-top:0;
+    color: #8daade;
 }
