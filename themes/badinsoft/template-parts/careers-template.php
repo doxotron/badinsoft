@@ -50,11 +50,12 @@ get_header(); ?>
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 									<div class="row post-row">
 										<div class="col-md-4 col-sm-12 col-xs-12">
-											<?php if (has_post_thumbnail()) {
-												the_post_thumbnail( 'full' );
+											<?php if (get_field('custom_image') != '' ) { ?>
+                                            <img src="<?php echo get_field('custom_image') ?>" class="img-responsive img-rounded">
+                                            <?php
 											} else {
 												$defaultImage = get_template_directory_uri();
-												echo "<img src='$defaultImage/images/default_feat_img_logo.png' class='img-responsive'>";
+												echo "<img src='$defaultImage/images/default_feat_img.png' class='img-responsive'>";
 											}
 											?>
 										</div>

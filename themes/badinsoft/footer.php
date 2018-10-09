@@ -22,6 +22,14 @@
                         <?php dynamic_sidebar( 'footer-1' ); ?>
                     </div>
                 <?php endif; ?>
+                <nav id="footer-social" class="footer-social">
+		            <?php
+		            wp_nav_menu( array(
+			            'theme_location' => 'menu-social',
+			            'menu_id'        => 'social-footer-menu',
+		            ) );
+		            ?>
+                </nav>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs">
                 <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>

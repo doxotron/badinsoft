@@ -25,7 +25,7 @@ get_header(); ?>
 									if ( is_singular() ) :
 										the_title( '<h1 class="text-white page-title">', '</h1>' );
 									else :
-										the_title( '<h1 class="text-white page-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+										the_title( '<h1 class="text-white page-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 									endif;
 
 									if ( 'post' === get_post_type() ) : ?>
@@ -95,29 +95,17 @@ get_header(); ?>
 							wp_reset_query(); // End of the loop. ?>
                         </div>
                     </section>
-                    <section class="industry-expertise">
+                    <?php if (get_field('additional_content') != ""): ?>
+                    <section class="industry-expertise page-content">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>Once small, but now a company with a numerous successful projects and cooperations behind itself, Badin Soft has managed to attract, employ and keep 50 employees and associates. The
-                                        secret of this success lies in the trust that’s being shown to our employees every day, in respecting their opinion and in the belief that the same goal connects us all.<br><br>
-                                    </p>
-                                    <img src="<?php echo get_template_directory_uri() ?>/images/employees.png" class="img-responsive img-rounded">
+                                    <?php echo get_field('additional_content'); ?>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="industry-expertise light-grey-section">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <p>We’ll remember the spring of 2018 as a period dedicated to moving to a new space in the center of the city. We’ll also remember it after continuing successful co-operations with the
-                                        old and starting new ones with domestic and foreign clients.<br><br></p>
-                                    <img src="<?php echo get_template_directory_uri() ?>/images/newspace1.jpg" class="img-responsive img-rounded">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <?php endif; ?>
                     <section class="blue-section">
                         <div class="container">
                             <div class="row">

@@ -34,6 +34,7 @@
     <section>
         <div class="container page-content">
             <div class="row">
+	            <?php if ( 'post' === get_post_type() ) : ?>
                 <div class="col-md-3 col-sm-12 col-xs-12 blog-sidebar">
 					<?php if ( 'post' === get_post_type() ) : ?>
                         <div class="entry-meta">
@@ -49,7 +50,8 @@
                         </div>
 	                <?php endif; ?>
                 </div>
-                <div class="col-md-9 col-sm-12 col-xs-12">
+                <?php endif; ?>
+                <div class="<?php if ( 'post' === get_post_type() ) { ?>col-md-9<?php } else { ?> col-md-8 col-md-offset-2 <?php } ?> col-sm-12 col-xs-12">
 					<?php
 					the_content( sprintf(
 						wp_kses(
@@ -76,7 +78,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-9 col-md-offset-3 col-sm-12 col-xs-12 blog-sidebar">
+                <div class="<?php if ( 'post' === get_post_type() ) { ?> col-md-9 col-md-offset-3 <?php } else { ?> col-md-8 col-md-offset-2 <?php } ?> col-sm-12 col-xs-12 blog-sidebar">
                     <div class="dot-separator"></div>
 	                <?php if ( is_active_sidebar( 'share-sidebar' ) ) : ?>
                         <div id="secondary" class="widget-area" role="complementary">

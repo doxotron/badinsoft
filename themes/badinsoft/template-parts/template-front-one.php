@@ -12,10 +12,10 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-              <?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
                 <article id="post-<?php the_ID(); ?>">
                     <section class="front-slider">
-                        <?php echo do_shortcode( get_field( 'slider_shortcode' ) ); ?>
+						<?php echo do_shortcode( get_field( 'slider_shortcode' ) ); ?>
                     </section>
                     <section class="trusted-companies">
                         <div class="container">
@@ -76,7 +76,8 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Custom Software Development</h3>
-                                        <p>Strategically built with your needs in mind, our custom software development solutions ensure you leave a unique mark on the internet’s landscape, enhancing your online presence and value. </p>
+                                        <p>Strategically built with your needs in mind, our custom software development solutions ensure you leave a unique mark on the internet’s landscape, enhancing your online presence
+                                            and value. </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 service">
@@ -96,7 +97,8 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Mobile Development</h3>
-                                        <p>To keep up with your always-on-the-go users, we provide mobile software solutions tailored to your specific needs. Always keep in touch with your customers across many popular platforms: Android, iOS, React Native, and others.</p>
+                                        <p>To keep up with your always-on-the-go users, we provide mobile software solutions tailored to your specific needs. Always keep in touch with your customers across many popular
+                                            platforms: Android, iOS, React Native, and others.</p>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +123,8 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Support & Maintenance</h3>
-                                        <p>Even after we hit the product launch milestone, our job is not done. We provide reliable maintenance, technical support, quality assurance, and training for all products we develop, assuring your software runs seamlessly with zero downtime.</p>
+                                        <p>Even after we hit the product launch milestone, our job is not done. We provide reliable maintenance, technical support, quality assurance, and training for all products we
+                                            develop, assuring your software runs seamlessly with zero downtime.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 service">
@@ -144,7 +147,8 @@ get_header(); ?>
                                             </svg>
                                         </div>
                                         <h3>Design & Consulting</h3>
-                                        <p>If you need expert guidance for your new idea, product or a project, we’ve got you covered. Our designers will make sure you get the best advice and support in accordance to the world’s best practices to ensure your business challenges are properly addressed.</p>
+                                        <p>If you need expert guidance for your new idea, product or a project, we’ve got you covered. Our designers will make sure you get the best advice and support in accordance to the
+                                            world’s best practices to ensure your business challenges are properly addressed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -165,9 +169,11 @@ get_header(); ?>
                                 </div>
                                 <div class="col-md-7 col-sm-12 align-left-mob-center text-section">
                                     <span class="emphasized-preheadline">Leaders in</span>
-                                    <h2>Banking and Loyalty systems</h2>
-                                    <p>Focusing on specific industries, such as banking and loyalty, helped our development and business teams gain more than 5 years of experience and knowledge in developing custom made solutions for some of the world’s leading companies in these areas. By combining industry-specific knowledge with an in-depth understanding of business processes, we are able to adequately help our clients at any stage of the project lifecycle.</p>
-                                    <a href="services" class="line-link">Read More</a>
+                                    <h2>Loyalty and Banking systems</h2>
+                                    <p>Focusing on specific industries, such as loyalty and banking, helped our development and business teams gain more than 5 years of experience and knowledge in developing custom made
+                                        solutions for some of the world’s leading companies in these areas. By combining industry-specific knowledge with an in-depth understanding of business processes, we are able to
+                                        adequately help our clients at any stage of the project lifecycle.</p>
+                                    <a href="/services" class="line-link">Read More</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -178,8 +184,10 @@ get_header(); ?>
                                 <div class="col-md-7 col-md-pull-5 col-sm-12 align-right-mob-center text-section">
                                     <span class="emphasized-preheadline">We're modern</span>
                                     <h2>Our Technology</h2>
-                                    <p>Creating value to end users and providing competitive advantage to our clients and partners requires a lot of dedication and knowledge. We strategically invest our time and resources in following and implementing leading technological trends into our everyday work. Our domain knowledge base is built upon Java, Javascript, web, mobile, and database technologies.</p>
-                                    <a href="our-experts" class="line-link">Read More</a>
+                                    <p>Creating value to end users and providing competitive advantage to our clients and partners requires a lot of dedication and knowledge. We strategically invest our time and
+                                        resources in following and implementing leading technological trends into our everyday work. Our domain knowledge base is built upon Java, Javascript, web, mobile, and database
+                                        technologies.</p>
+                                    <a href="/our-experts" class="line-link">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -188,8 +196,47 @@ get_header(); ?>
                     <section class="testimonials-section">
                         <div class="container">
                             <div class="row">
-                                <?php $studies_exist = 0;?>
-                                <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+								<?php $studies_exist = false; ?>
+								<?php
+								query_posts( array(
+									'post_type' => 'studies',
+									'showposts' => 1,
+									'order'     => 'ASC'
+								) );
+								if ( have_posts() ):
+									$studies_exist = true;
+								?>
+
+                                    <div class="col-md-6 col-md-push-6 col-sm-12 text-left">
+                                        <div class="testimonial-left">
+                                            <h2 style="margin-bottom:40px; margin-top:0;">Case studies</h2>
+											<?php
+											while ( have_posts() ) :
+												the_post();
+												?>
+                                                <a href="<?php the_permalink() ?>" class="no-style">
+													<?php if ( has_post_thumbnail() ) {
+														the_post_thumbnail( 'full', array( 'class' => 'img-responsive img-rounded' ) );
+													} else {
+														$defaultImage = get_template_directory_uri();
+														echo "<img src='$defaultImage/images/abstract_cover2.jpg' class='img-responsive'>";
+													}
+													?>
+                                                </a>
+                                                <a href="<?php the_permalink() ?>" class="no-style">
+                                                    <h3 class="text-left text-bold"><?php the_title() ?></h3>
+                                                </a>
+                                                <div class="text-left">
+													<?php the_excerpt() ?>
+                                                    <a href="<?php the_permalink() ?>" class="line-link line-link-white">Read more</a>
+                                                </div>
+											<?php endwhile; ?>
+
+                                        </div>
+                                    </div>
+								<?php endif;
+								wp_reset_query(); // End of the loop. ?>
+                                <div class="<?php if ($studies_exist == true) {echo "col-md-6 col-md-pull-6 col-sm-12 text-right";} else {echo "col-md-8 col-md-offset-2 col-sm-12 text-center";} ?>">
                                     <div class="testimonial-left">
                                         <h2 style="margin-bottom:40px; margin-top:0;">Client testimonials</h2>
                                         <div class="swiper-container">
@@ -205,7 +252,7 @@ get_header(); ?>
 													while ( have_posts() ) :
 														the_post();
 														?>
-                                                        <div class="swiper-slide testimonial-single">
+                                                        <div class="swiper-slide testimonial-single <?php if ($studies_exist == true) { echo "testimonial-single-right"; }?>">
 															<?php if ( has_post_thumbnail() ) {
 																the_post_thumbnail( 'medium', array( 'class' => 'img-circle' ) );
 															} else {
@@ -280,7 +327,7 @@ get_header(); ?>
                         </div>
                     </section>
 
-                    <?php the_content(); ?>
+					<?php the_content(); ?>
 
                 </article>
 			<?php endwhile; // End of the loop. ?>

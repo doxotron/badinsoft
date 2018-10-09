@@ -39,6 +39,15 @@ get_header(); ?>
                         </div>
                         <div class="front-scroll-cta"><span class="front-cta-line"></span></div>
                     </section>
+                    <section class="industry-expertise">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="services-section portfolio-section">
                         <div class="container">
                             <h2 class="text-center">What our clients are saying about us</h2>
@@ -85,20 +94,20 @@ get_header(); ?>
 
                         </div>
                     </section>
+	                <?php
+	                $studies_count = 0;
+	                query_posts( array(
+		                'post_type' => 'studies',
+		                'showposts' => - 1,
+		                'order'     => 'ASC'
+	                ) );
 
+	                if ( have_posts() ): ?>
                     <section class="ceo-section light-grey-section">
                         <div class="container">
                             <h2 class="text-center">Case studies</h2>
                             <div class="row">
-							<?php
-							$studies_count = 0;
-							query_posts( array(
-								'post_type' => 'studies',
-								'showposts' => - 1,
-								'order'     => 'ASC'
-							) );
 
-							if ( have_posts() ): ?>
 
 									<?php
 									while ( have_posts() ) :
@@ -131,11 +140,12 @@ get_header(); ?>
 										$studies_count++;
 									endwhile; ?>
 
-							<?php endif;
-							wp_reset_query(); // End of the loop. ?>
+
                             </div>
                         </div>
                     </section>
+	                <?php endif;
+	                wp_reset_query(); // End of the loop. ?>
                     <section class="blue-section">
                         <div class="container">
                             <div class="row">
