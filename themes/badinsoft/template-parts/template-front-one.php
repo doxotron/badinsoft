@@ -23,28 +23,44 @@ get_header(); ?>
                                 <div class="col-xs-12">
                                     <h2>Trusted by dozens of companies around the world</h2>
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/01_tx.png"
                                          class="img-responsive">
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/02_crealogix.png"
                                          class="img-responsive">
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/03_cr.png"
                                          class="img-responsive">
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/04_telekom.png"
                                          class="img-responsive">
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/05_subway.png"
                                          class="img-responsive">
                                 </div>
-                                <div class="col-md-2 col-sm-4 col-xs-6">
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
                                     <img src="<?php echo get_template_directory_uri() ?>/images/partners/06_craveable.png"
+                                         class="img-responsive">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
+                                  <img src="<?php echo get_template_directory_uri() ?>/images/partners/07_direktna_banka.png"
+                                  class="img-responsive">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/08_frs.png"
+                                         class="img-responsive">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/09_united_cloud.png"
+                                         class="img-responsive">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-xs-6 trusted-companies-partner">
+                                    <img src="<?php echo get_template_directory_uri() ?>/images/partners/10_eFront.png"
                                          class="img-responsive">
                                 </div>
                             </div>
