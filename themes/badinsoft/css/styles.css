@@ -1791,3 +1791,10 @@ a.no-style, a.no-style:focus, a.no-style:active, a.no-style:visited, a.no-style:
     margin-top: 0;
     color: #8daade;
 }
+
+@media (min-width: 768px) {
+  .trusted-companies-partner {
+      display: inline-block;
+      float: none;
+  }
+}
