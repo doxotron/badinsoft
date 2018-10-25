@@ -1798,3 +1798,55 @@ a.no-style, a.no-style:focus, a.no-style:active, a.no-style:visited, a.no-style:
       float: none;
   }
 }
+
+progress, progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 1.5em;
+  width: 100%;
+}
+
+.skill {
+  margin-bottom: 0;
+  position: relative;
+}
+.skill-name {
+  display: block;
+  color: #eee;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+}
+
+.skill-bar[value]::-webkit-progress-value {
+  background-color: #173341; //#243d7b
+}
+
+.skill-bar[value]::-moz-progress-value {
+  background-color: #173341; //#243d7b
+}
+
+.skill-bar[value]::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+.skill-bar[value]::-moz-progress-bar {
+  background-color: #eee;
+}
+
+/* author box */
+.saboxplugin-wrap {
+  margin: 25px 0 0 !important;
+}
+
+/* comment list avatars fix */
+.comment-list .avatar {
+  max-width: 32px;
+  margin-right: 5px;
+}
